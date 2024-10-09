@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import { Copy, ExternalLink, CheckCircle, Terminal } from 'lucide-react';
 import { commands } from './data/commands';
+import Footer from './components/Footer';
 
 function App() {
   const [filter, setFilter] = useState('');
@@ -47,7 +48,7 @@ function App() {
       </div>
 
       <div className="w-full max-w-3xl space-y-6">
-        {filteredCommands.map((cmd, index) => (
+        {filteredCommands.length > 0 ? filteredCommands.map((cmd, index) => (
           <div
             key={index}
             className="bg-gray-800 p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-gray-750"
@@ -92,8 +93,9 @@ function App() {
               </button>
             </div>
           </div>
-        ))}
+        )) : <p className='text-slate-300 text-center'>Sin resultados</p>}
       </div>
+      <Footer />
     </div>
   );
 }
