@@ -15,22 +15,9 @@ export default {
         'darker-blue': '#111827',
         'gray-blue': '#4b5563',
       },
-      animation: {
-        'gradient-x': 'gradient-x 15s ease infinite',
-      },
-      keyframes: {
-        'gradient-x': {
-          '0%, 100%': {
-            'background-size': '200% 200%',
-            'background-position': 'left center',
-          },
-          '50%': {
-            'background-size': '200% 200%',
-            'background-position': 'right center',
-          },
-        },
-      },
+
     },
   },
   plugins: [],
 }
+

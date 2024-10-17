@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen ${isDarkMode ? ' bg-gradient-to-br from-dark-blue via-darker-blue to-gray-blue animate-gradient-x' : 'bg-gradient-to-br from-gray-100 to-white text-gray-800'} flex flex-col items-center p-8 transition-colors duration-300`}>
+    <div className={`min-h-screen ${isDarkMode ? ' bg-gradient-to-tl from-dark-blue via-darker-blue to-gray-blue ' : 'bg-gradient-to-br from-gray-100 to-white text-gray-800'} flex flex-col items-center p-8 transition-colors duration-300`}>
       <button
           onClick={toggleDarkMode}
           className={`fixed top-0 right-0 m-2  ${isDarkMode ? 'text-yellow-400' : 'text-gray-800'} transition-colors duration-300`}

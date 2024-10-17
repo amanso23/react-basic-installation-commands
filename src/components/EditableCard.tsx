@@ -28,7 +28,6 @@ const EditableCard: React.FC<EditableCardProps> = ({ initialContent, isDarkMode,
 
   const handleBlur = () => {
     setIsEditing(false);
-    
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
