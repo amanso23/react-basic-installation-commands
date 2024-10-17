@@ -52,11 +52,6 @@ export const commands: Command[] = [
     link: 'https://react.i18next.com/',
   },
   {
-    name: 'Sass (Preprocesador CSS)',
-    command: 'npm install sass',
-    link: 'https://sass-lang.com/',
-  },
-  {
     name: 'Styled Components',
     command: 'npm install styled-components',
     link: 'https://styled-components.com/',

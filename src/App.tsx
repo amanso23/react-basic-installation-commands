@@ -27,12 +27,9 @@ function App() {
         >
         {isDarkMode ? <Sun size={23} /> : <Moon size={23} />}
       </button>
-      <header className="mb-12 relative">
-        <h1 className={`text-5xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
-          React Installation Commands 
-        </h1>
-        <p className={`text-xl ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-          Quick access to essential React setup commands
+      <header className="relative mb-4">
+        <p className={`text-xl flex items-center gap-x-1 ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+          Quick access to essential React <span><img src="../react-svgrepo-com.svg" alt="react svg" className="size-8  animate-spin-react" /></span> setup commands
         </p>
       </header>
 
@@ -56,7 +53,7 @@ function App() {
       </div>
       <Footer isDarkMode={isDarkMode} />
     </div>
-  );
+  )
 }
 
 export default App;

@@ -15,7 +15,14 @@ export default {
         'darker-blue': '#111827',
         'gray-blue': '#4b5563',
       },
-
+      keyframes: {
+        'spin-react': {
+          to: { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        'spin-react': 'spin-react 6s linear infinite',
+      },
     },
   },
   plugins: [],

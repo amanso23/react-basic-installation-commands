@@ -58,7 +58,7 @@ const EditableCard: React.FC<EditableCardProps> = ({ initialContent, isDarkMode,
           rel="noopener noreferrer"
           className={`${isDarkMode ? 'text-gray-400 hover:text-gray-200' : 'text-gray-600 hover:text-gray-800'} flex items-center transition-colors duration-200  whitespace-nowrap`}
         >
-          Saber más <ExternalLink className="ml-1" size={18} />
+          Documentación <ExternalLink className="ml-1" size={18} />
         </a>
       </div>
       <div className={`${isDarkMode ? 'bg-gray-900' : 'bg-gray-100'} p-4 rounded-md flex justify-between items-center overflow-x-auto`}>
