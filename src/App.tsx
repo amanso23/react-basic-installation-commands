@@ -29,7 +29,7 @@ function App() {
       </button>
       <header className="relative mb-4">
         <p className={`text-xl flex items-center gap-x-1 ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-          Quick access to essential React <span><img src="../react-svgrepo-com.svg" alt="react svg" className="size-8  animate-spin-react" /></span> setup commands
+          Quick access to essential React <span><img src="/react-svgrepo-com.svg" alt="react svg" className="size-8  animate-spin-react" /></span> setup commands
         </p>
       </header>
 
