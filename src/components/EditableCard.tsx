@@ -49,16 +49,16 @@ const EditableCard: React.FC<EditableCardProps> = ({ initialContent, isDarkMode,
       onMouseLeave={() => setShowTooltip(false)}
     >
       <div className="flex justify-between items-center mb-4">
-        <h2 className={`text-2xl font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
+        <h2 className={`text-xl md:text-2xl font-semibold  ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
           {name}
         </h2>
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${isDarkMode ? 'text-gray-400 hover:text-gray-200' : 'text-gray-600 hover:text-gray-800'} flex items-center transition-colors duration-200`}
+          className={`${isDarkMode ? 'text-gray-400 hover:text-gray-200' : 'text-gray-600 hover:text-gray-800'} flex items-center transition-colors duration-200  whitespace-nowrap`}
         >
-          Official Page <ExternalLink className="ml-1" size={18} />
+          Saber más <ExternalLink className="ml-1" size={18} />
         </a>
       </div>
       <div className={`${isDarkMode ? 'bg-gray-900' : 'bg-gray-100'} p-4 rounded-md flex justify-between items-center overflow-x-auto`}>
