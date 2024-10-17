@@ -8,8 +8,7 @@ export const commands: Command[] = [
   },
   {
     name: 'Tailwind CSS',
-    command:
-      'npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p',
+    command: 'npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p',
     link: 'https://tailwindcss.com/docs/guides/vite',
   },
   {
@@ -42,4 +41,54 @@ export const commands: Command[] = [
     command: 'npm install framer-motion',
     link: 'https://www.framer.com/motion/',
   },
-];
+  {
+    name: 'Zustand (Manejo de estado)',
+    command: 'npm install zustand',
+    link: 'https://zustand-demo.pmnd.rs/',
+  },
+  {
+    name: 'React i18next (Internacionalización)',
+    command: 'npm install react-i18next i18next',
+    link: 'https://react.i18next.com/',
+  },
+  {
+    name: 'Sass (Preprocesador CSS)',
+    command: 'npm install sass',
+    link: 'https://sass-lang.com/',
+  },
+  {
+    name: 'Styled Components',
+    command: 'npm install styled-components',
+    link: 'https://styled-components.com/',
+  },
+  {
+    name: 'Jest (Testing)',
+    command: 'npm install --save-dev jest @testing-library/react @testing-library/jest-dom',
+    link: 'https://jestjs.io/',
+  },
+  {
+    name: 'ESLint (Linter)',
+    command: 'npm install eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb',
+    link: 'https://eslint.org/',
+  },
+  {
+    name: 'Prettier (Formatteo de código)',
+    command: 'npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier',
+    link: 'https://prettier.io/',
+  },
+  {
+    name: 'Heroicons (Iconos para Tailwind)',
+    command: 'npm install @heroicons/react',
+    link: 'https://heroicons.com/',
+  },
+  {
+    name: 'React Helmet (SEO)',
+    command: 'npm install react-helmet-async',
+    link: 'https://github.com/staylor/react-helmet-async',
+  },
+  {
+    name: 'Redux Toolkit (Manejo de estado avanzado)',
+    command: 'npm install @reduxjs/toolkit react-redux',
+    link: 'https://redux-toolkit.js.org/',
+  },
+]
