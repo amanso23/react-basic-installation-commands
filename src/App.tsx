@@ -20,7 +20,6 @@ function App() {
   );
 
  
-  
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
@@ -62,7 +61,7 @@ function App() {
         </p>
       </header>
 
-      <div className="w-full max-w-3xl mb-8 re">
+      <div className="w-full max-w-3xl mb-8 relative">
         <input
           type="text"
           placeholder="vite react, react router dom..."
@@ -73,7 +72,6 @@ function App() {
           className={`absolute left-4 top-1/2 transform -translate-y-1/2 ${isDarkMode ? 'text-gray-500' : 'text-gray-400'}`}
           size={20}
         />
-
 
         <div className="absolute right-2 top-1/2 transform -translate-y-1/2 z-50" ref={popupRef} >
           <button
