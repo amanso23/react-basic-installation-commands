@@ -9,6 +9,9 @@ interface EditableCardProps {
   packageManager: string;
 }
 
+
+
+
 const EditableCard: React.FC<EditableCardProps> = ({ initialContent, isDarkMode, name, link, packageManager }) => {
   const [content, setContent] = useState(initialContent)
   const [isEditing, setIsEditing] = useState(false)
@@ -16,6 +19,7 @@ const EditableCard: React.FC<EditableCardProps> = ({ initialContent, isDarkMode,
   const [isCopied, setIsCopied] = useState(false)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
+ 
   useEffect(() => {
     setContent((prevContent) => {
       const contentWithoutPackageManager = prevContent.replace(/^(npm|yarn|pnpm)\s/, '');

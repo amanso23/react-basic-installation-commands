@@ -19,6 +19,9 @@ function App() {
       cmd.command.toLowerCase().includes(filter.toLowerCase())
   );
 
+ 
+  
+
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
@@ -59,7 +62,7 @@ function App() {
         </p>
       </header>
 
-      <div className="w-full max-w-3xl mb-8 relative">
+      <div className="w-full max-w-3xl mb-8 re">
         <input
           type="text"
           placeholder="vite react, react router dom..."
@@ -103,8 +106,8 @@ function App() {
       </div>
     
       <div className="w-full max-w-3xl space-y-6">
-        {filteredCommands.length > 0 ? filteredCommands.map((cmd, index) => (
-          <EditableCard initialContent={cmd.command} isDarkMode={isDarkMode} name={cmd.name} link={cmd.link} key={index} packageManager={packageManager}/>
+        {filteredCommands.length > 0 ? filteredCommands.map((cmd) => (
+          <EditableCard initialContent={cmd.command} isDarkMode={isDarkMode} name={cmd.name} link={cmd.link} key={cmd.id} packageManager={packageManager}/>
         )) : <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} text-center`}>Sin resultados</p>}
       </div>
 
